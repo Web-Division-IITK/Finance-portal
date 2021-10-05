@@ -176,4 +176,10 @@ input{
     font-weight:500;
     font-family: Georgia, serif;
 }
-/* rgba(240, 240, 243, 0.74); */
+.left{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.left div{
+    width: 12rem;
+}
