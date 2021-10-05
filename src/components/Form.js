@@ -5,31 +5,39 @@ import '../assets/css/Practice.css';
 class Form extends React.Component {
   render(){
     return (
-      <div>
-      <div className="top">
-        <img src={iitklogo} className="iitklogo" alt="iitklogo" />
+      <div className="p-3 mb-2 bg-light text-dark container-fluid">
+      <div className="top container-fluid">
+        <img src={iitklogo} className="iitklogo  img-responsive " alt="iitklogo" />
         <div className="heading">
-          <h1>Bill Clearance FORM – SG2 </h1>
+          <h1 className="">Bill Clearance FORM – SG2 </h1>
           <h1>Indian Institute of Technology Kanpur</h1>
-          <h4>Students Gymkhana Account</h4>
+          <h4  style={{fontWeight:"30"}}>Students Gymkhana Account</h4>
         </div>
-        <img src={gymkhana} className="gymkhana" alt="gymkhana" />
+        <div>
+        <img src={gymkhana} className="gymkhana  img-responsive img-fluid" alt="gymkhana" />
+        <div className="container-fluid" > 
+       <h5 className="img_tag"style={{fontWeight:".8",fontSize:".5rem",paddingLeft:"2.5rem"}}>Student's Gymkhana</h5>
+      <h6 style={{textAlign:"center",fontWeight:"1",fontSize:".6rem"}}>IIT Kanpur</h6>
       </div>
-      <form method="POST">
-        <div className="checkbox">
-          <label htmlFor="reimbursment">Reimbursement</label>
-          <input type="checkbox" id="reimbursment" />
-          <label htmlFor="vendor">Payment to vendor</label>
-          <input type="checkbox" id="vendor" />
+      </div>
+      </div>
+      <div className="container-fluid">
+      <form  >
+        <div className="checkbox container-fluid" >
+          <label htmlFor="reimbursment"className="tick_text ">Reimbursement</label>
+          <input type="checkbox" id="reimbursment" className="tick"/>
+          <label htmlFor="vendor"className=" tick_text">Payment to vendor</label>
+          <input type="checkbox" className="tick"id="vendor" />
         </div>
-        <table className="table1">
+        <div className="table-responsive">
+        <table className=" table1">
           <tr>
-            <td>Name of Council/Cell:</td>
-            <td>
+            <td className="">Name of Council/Cell:</td>
+            <td className="">
               <input type="text" />
             </td>
-            <td>Name of Club/Head</td>
-            <td>
+            <td class="">Name of Club/Head</td>
+            <td className="">
               <input type="text" />
             </td>
           </tr>
@@ -64,6 +72,8 @@ class Form extends React.Component {
             </td>
           </tr>
         </table>
+        </div>
+        <div className="table-responsive-sm">
         <table className="table2">
           <tr>
             <td>Date </td>
@@ -74,10 +84,70 @@ class Form extends React.Component {
           <tr>
             <td></td>
             <td>
+              <input type="text" style={{width:"100%"}}/>
+            </td>
+            <td>
+              <input type="text" className="size"style={{width:"100%"}} />
+            </td>
+            <td>
+              <input type="text"style={{width:"100%"}} />
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>
+              <input type="text" style={{width:"100%"}}/>
+            </td>
+            <td>
+              <input type="text" className="size" style={{width:"100%"}}/>
+            </td>
+            <td>
+              <input type="text" style={{width:"100%"}}/>
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>
+              <input type="text" style={{width:"100%"}}/>
+            </td>
+            <td>
+              <input type="text" className="size" style={{width:"100%"}}/>
+            </td>
+            <td>
+              <input type="text"style={{width:"100%"}} />
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>
+              <input type="text" style={{width:"100%"}}/>
+            </td>
+            <td>
+              <input type="text" className="size" style={{width:"100%"}}/>
+            </td>
+            <td>
+              <input type="text" style={{width:"100%"}}/>
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>
+              <input type="text" style={{width:"100%"}}/>
+            </td>
+            <td>
+              <input type="text" className="size"style={{width:"100%"}} />
+            </td>
+            <td>
+              <input type="text"style={{width:"100%"}} />
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>
               <input type="text" />
             </td>
             <td>
-              <input type="text" className="size" />
+              <input type="text" className="size" style={{width:"100%"}}/>
             </td>
             <td>
               <input type="text" />
@@ -88,76 +158,17 @@ class Form extends React.Component {
             <td>
               <input type="text" />
             </td>
-            <td>
-              <input type="text" className="size" />
-            </td>
-            <td>
-              <input type="text" />
-            </td>
-          </tr>
-          <tr>
-            <td></td>
-            <td>
-              <input type="text" />
-            </td>
-            <td>
-              <input type="text" className="size" />
-            </td>
-            <td>
-              <input type="text" />
-            </td>
-          </tr>
-          <tr>
-            <td></td>
-            <td>
-              <input type="text" />
-            </td>
-            <td>
-              <input type="text" className="size" />
-            </td>
-            <td>
-              <input type="text" />
-            </td>
-          </tr>
-          <tr>
-            <td></td>
-            <td>
-              <input type="text" />
-            </td>
-            <td>
-              <input type="text" className="size" />
-            </td>
-            <td>
-              <input type="text" />
-            </td>
-          </tr>
-          <tr>
-            <td></td>
-            <td>
-              <input type="text" />
-            </td>
-            <td>
-              <input type="text" className="size" />
-            </td>
-            <td>
-              <input type="text" />
-            </td>
-          </tr>
-          <tr>
-            <td></td>
-            <td>
-              <input type="text" />
-            </td>
-            <td>
-              Total:
-              <input type="text" id="total" />
+            <td  style={{display:"flex"}}>
+             <span> Total</span>:
+              <input type="text" id="total" style={{marginLeft:"3rem"}} />
             </td>
             <td>
               <input type="text" />
             </td>
           </tr>
         </table>
-        <div className="para">
+        </div>
+        <div className="para container-fluid">
           <h4>In case of expenditure below ₹25,000:</h4>
           <p>
             “I am personally satisfied that these goods purchased are of the
@@ -169,6 +180,7 @@ class Form extends React.Component {
             The LPC form has to be attached along with this form.
           </div>
         </div>
+        <div  className="table-responsive">
         <table className="table3">
           <tr>
             <td>Chairperson/President/Genera, UG,PG- Secretary</td>
@@ -179,17 +191,21 @@ class Form extends React.Component {
           </tr>
           <tr>
             <td>
-              <input type="text" />
+              <input type="text" className="t3_input" style={{width:"100%"}}/>
             </td>
             <td>
-              <input type="text" />
+              <input type="text" className="t3_input" style={{width:"100%"}}/>
             </td>
             <td>
-              <input type="text" />
+              <input type="text" style={{width:"100%"}} />
             </td>
           </tr>
         </table>
+        </div>
+        <div id="headline2_div">
         <h4 id="headline2">To be filled by Finance Convener / FC Member</h4>
+        </div>
+        <div  className="table-responsive">
         <table className="table4">
           <tr>
             <td>Balance in Club/Head</td>
@@ -199,7 +215,7 @@ class Form extends React.Component {
           </tr>
           <tr>
             <td>
-              <input vtype="text" />
+              <input type="text" style={{width:"100%"}}/>
             </td>
             <td>
               <input type="text" />
@@ -212,6 +228,8 @@ class Form extends React.Component {
             </td>
           </tr>
         </table>
+        </div>
+        <div  className="table-responsive">
         <table className="table5">
           <tr>
             <td>Gymkhana Office</td>
@@ -226,7 +244,10 @@ class Form extends React.Component {
             </td>
           </tr>
         </table>
+        </div>
+        <button type="button" class="btn btn-secondary" id="submit" onClick={this.props.handlePrint}>Save as Pdf</button>
       </form>
+      </div>
     </div>
    
   );

@@ -10,8 +10,7 @@ const App = () => {
   });
   return (
     <div>
-      <Form ref={componentRef} />
-      <button onClick={handlePrint}>Save as Pdf</button>
+      <Form ref={componentRef} handlePrint={handlePrint} />
     </div>
   );
 };
