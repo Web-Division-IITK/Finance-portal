@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/Finance-portal/static/css/main.42db2632.chunk.css",
-    "main.js": "/Finance-portal/static/js/main.22c01e32.chunk.js",
-    "main.js.map": "/Finance-portal/static/js/main.22c01e32.chunk.js.map",
-    "runtime-main.js": "/Finance-portal/static/js/runtime-main.96d64460.js",
-    "runtime-main.js.map": "/Finance-portal/static/js/runtime-main.96d64460.js.map",
-    "static/js/2.bcb1e244.chunk.js": "/Finance-portal/static/js/2.bcb1e244.chunk.js",
-    "static/js/2.bcb1e244.chunk.js.map": "/Finance-portal/static/js/2.bcb1e244.chunk.js.map",
-    "index.html": "/Finance-portal/index.html",
-    "static/css/main.42db2632.chunk.css.map": "/Finance-portal/static/css/main.42db2632.chunk.css.map",
-    "static/js/2.bcb1e244.chunk.js.LICENSE.txt": "/Finance-portal/static/js/2.bcb1e244.chunk.js.LICENSE.txt",
-    "static/media/iitklogo.b5d612f4.jpeg": "/Finance-portal/static/media/iitklogo.b5d612f4.jpeg"
+    "main.css": "/try/static/css/main.415504d3.chunk.css",
+    "main.js": "/try/static/js/main.a7a529d4.chunk.js",
+    "main.js.map": "/try/static/js/main.a7a529d4.chunk.js.map",
+    "runtime-main.js": "/try/static/js/runtime-main.d51cb691.js",
+    "runtime-main.js.map": "/try/static/js/runtime-main.d51cb691.js.map",
+    "static/js/2.bcb1e244.chunk.js": "/try/static/js/2.bcb1e244.chunk.js",
+    "static/js/2.bcb1e244.chunk.js.map": "/try/static/js/2.bcb1e244.chunk.js.map",
+    "index.html": "/try/index.html",
+    "static/css/main.415504d3.chunk.css.map": "/try/static/css/main.415504d3.chunk.css.map",
+    "static/js/2.bcb1e244.chunk.js.LICENSE.txt": "/try/static/js/2.bcb1e244.chunk.js.LICENSE.txt",
+    "static/media/iitklogo.b5d612f4.jpeg": "/try/static/media/iitklogo.b5d612f4.jpeg"
   },
   "entrypoints": [
-    "static/js/runtime-main.96d64460.js",
+    "static/js/runtime-main.d51cb691.js",
     "static/js/2.bcb1e244.chunk.js",
-    "static/css/main.42db2632.chunk.css",
-    "static/js/main.22c01e32.chunk.js"
+    "static/css/main.415504d3.chunk.css",
+    "static/js/main.a7a529d4.chunk.js"
   ]
 }
