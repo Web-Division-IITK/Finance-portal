@@ -1,16 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@100&family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
 @media print {
   body {
     width: 80cm;
+    
   }
   #submit {
     visibility: hidden;
   }
 }
 body{
-    
-    font-family: 'Alegreya Sans', sans-serif;
-    font-family: 'Open Sans', sans-serif;
+ 
+  font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
 }
 .top {
   position: relative;
@@ -60,7 +61,7 @@ body{
   }
   div.para,
   div#headline2_div {
-    padding-right: 20% !important;
+    padding-right: 60% !important;
   }
   input {
     width: 100px;
@@ -153,10 +154,11 @@ td label {
   width: 156px;
 }
 
-.para h4 {
+.para h3 {
+  font-weight:900;
   position: relative;
   margin-top: 1rem;
-  margin-left: 22%;
+  margin-left: 25%;
   text-align: start;
   margin-top: 1rem;
 }
@@ -165,11 +167,11 @@ p {
 }
 .para p {
   text-align: start;
-  margin-left: 3%;
+  margin-left: 1%;
 }
 div#headline {
   text-align: start;
-  margin-left: 20%;
+  margin-left: 1%;
 }
 .table3 {
   position: relative;
@@ -195,13 +197,14 @@ div#headline {
 }
 #headline2 {
   position: relative;
-  margin-left: 22%;
+  margin-left: 10.5%;
   margin-right: 12%;
   margin-top: 1rem;
+  font-weight: 600;
 }
 #submit {
   position: relative;
-  left: 43%;
+  left: 35%;
   margin-top: 1rem;
 }
 td input {

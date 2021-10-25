@@ -169,13 +169,13 @@ class Form extends React.Component {
         </table>
         </div>
         <div className="para container-fluid">
-          <h4>In case of expenditure below ₹25,000:</h4>
+          <h3 style={{ marginLeft: "12%"}}>In case of expenditure below ₹25,000:</h3>
           <p>
             “I am personally satisfied that these goods purchased are of the
             requisite quality and purchased from a reliable supplier at a
             reasonable price “
           </p>
-          <h4>In case of expenditure above ₹25,000 and below ₹2,50,000:</h4>
+          <h3 style={{ marginLeft: "9.5%",fontWeight:"900"}}>In case of expenditure above ₹25,000 and below ₹2,50,000:</h3>
           <div id="headline">
              The LPC form has to be attached along with this form.
           </div>
