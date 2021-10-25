@@ -9,9 +9,9 @@ class Form extends React.Component {
       <div className="top container-fluid">
         <img src={iitklogo} className="iitklogo  img-responsive " alt="iitklogo" />
         <div className="heading">
-          <h1 className="">Bill Clearance FORM – SG2 </h1>
+          <h1 className>Bill Clearance FORM – SG2 </h1>
           <h1>Indian Institute of Technology Kanpur</h1>
-          <h4  style={{fontWeight:"30"}}>Students Gymkhana Account</h4>
+          <h4  style={{fontWeight:"250", letterSpacing:"4px"}}>Students Gymkhana Account</h4>
         </div>
         <div>
         <img src={gymkhana} className="gymkhana  img-responsive img-fluid" alt="gymkhana" />
@@ -46,7 +46,7 @@ class Form extends React.Component {
             <td>
               <input type="text" />
             </td>
-            <td>Name ofCoordinator:</td>
+            <td>Name of Coordinator:</td>
             <td>
               <input type="text" />
             </td>
@@ -75,11 +75,11 @@ class Form extends React.Component {
         </div>
         <div className="table-responsive-sm">
         <table className="table2">
-          <tr>
+          <tr className="th-header">
             <td>Date </td>
             <td>Bill /VR. No</td>
             <td>Brief Particulars of Transaction</td>
-            <td>Amount (In ₹)</td>
+            <td>Amount (In <span className="ruppee">₹</span> )</td>
           </tr>
           <tr>
             <td><input type="text" style={{width:"100%"}}/></td>
@@ -158,8 +158,8 @@ class Form extends React.Component {
             <td>
               <input type="text" />
             </td>
-            <td  style={{display:"flex"}}>
-             <span> Total</span>:
+            <td  style={{display:"flex", border:"0px"}}>
+             <span className="total"> Total:</span>
               <input type="text" id="total" style={{marginLeft:"4rem"},{width:"100%"}} />
             </td>
             <td>
@@ -182,7 +182,7 @@ class Form extends React.Component {
         </div>
         <div  className="table-responsive">
         <table className="table3">
-          <tr>
+          <tr className="th-header">
             <td>Chairperson/President/Genera, UG,PG- Secretary</td>
             <td>
               Chairperson, Students' Senate (Only in Case of Senator Seed Fund)
@@ -207,11 +207,11 @@ class Form extends React.Component {
         </div>
         <div  className="table-responsive">
         <table className="table4">
-          <tr>
+          <tr className="th-header">
             <td>Balance in Club/Head</td>
             <td>Balance in Council/Cell:</td>
             <td>Remarks (if any):</td>
-            <td>Verified for ₹:</td>
+            <td>Verified for <span className="ruppee">₹:</span></td>
           </tr>
           <tr>
             <td>
@@ -231,7 +231,7 @@ class Form extends React.Component {
         </div>
         <div  className="table-responsive">
         <table className="table5">
-          <tr>
+          <tr className="th-header">
             <td>Gymkhana Office</td>
             <td>Finance Convener</td>
           </tr>
