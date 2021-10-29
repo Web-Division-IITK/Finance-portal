@@ -1,12 +1,37 @@
 import React from 'react'
 import iitklogo from '../assets/images/iitklogo.jpeg';
 import gymkhana from '../assets/images/gymkhana.jpeg';
+import TextField from '../components/TextField'
 import '../assets/css/Practice.css';
 class Form extends React.Component {
+  state={
+    n2:5,
+    n3:1,
+    n4:1,
+    n5:1
+  }
+   addRows=(e)=>{
+
+    e.preventDefault();
+    switch(e.target.name)
+    {
+      case "table2": this.setState({n2:this.state.n2+1})
+      break;
+      case "table3": this.setState({n3:this.state.n3+1})
+      break;
+      case "table4": this.setState({n4:this.state.n4+1})
+      break;
+      case "table5": this.setState({n5:this.state.n5+1})
+      
+    }
+    
+  }
   render(){
+    
+   
     return (
-      <div className="p-3 mb-2 bg-light text-dark container-fluid">
-      <div className="top container-fluid">
+      <div className="p-3 mb-2 bg-light text-dark container-fluid white">
+      <div className="top">
         <img src={iitklogo} className="iitklogo  img-responsive " alt="iitklogo" />
         <div className="heading">
           <h1 className>Bill Clearance FORM – SG2 </h1>
@@ -14,15 +39,15 @@ class Form extends React.Component {
           <h4  style={{fontWeight:"250", letterSpacing:"4px"}}>Students Gymkhana Account</h4>
         </div>
         <div>
-        <img src={gymkhana} className="gymkhana  img-responsive img-fluid" alt="gymkhana" />
+        <img src={gymkhana} style={{width:"300px"}}className="gymkhana  img-responsive img-fluid" alt="gymkhana" />
         <div className="container-fluid" > 
-       <h5 className="img_tag"style={{fontWeight:".8",fontSize:".5rem",paddingLeft:"2.5rem"}}>Student's Gymkhana</h5>
+       <h5 className="img_tag"style={{fontWeight:".8",fontSize:".5rem",textAlign:"center"}}>Student's Gymkhana</h5>
       <h6 style={{textAlign:"center",fontWeight:"1",fontSize:".6rem"}}>IIT Kanpur</h6>
       </div>
       </div>
       </div>
       <div className="container-fluid">
-      <form  >
+      <form className="white" >
         <div className="checkbox container-fluid" >
           <label htmlFor="reimbursment"className="tick_text ">Reimbursement</label>
           <input type="checkbox" id="reimbursment" className="tick"/>
@@ -36,7 +61,7 @@ class Form extends React.Component {
             <td className="">
               <input type="text" />
             </td>
-            <td class="">Name of Club/Head</td>
+            <td className="">Name of Club/Head</td>
             <td className="">
               <input type="text" />
             </td>
@@ -81,78 +106,7 @@ class Form extends React.Component {
             <td>Brief Particulars of Transaction</td>
             <td>Amount (In <span className="ruppee">₹</span> )</td>
           </tr>
-          <tr>
-            <td><input type="text" style={{width:"100%"}}/></td>
-            <td>
-              <input type="text" style={{width:"100%"}}/>
-            </td>
-            <td>
-              <input type="text" className="size"style={{width:"100%"}} />
-            </td>
-            <td>
-              <input type="text"style={{width:"100%"}} />
-            </td>
-          </tr>
-          <tr>
-            <td><input type="text" style={{width:"100%"}}/></td>
-            <td>
-              <input type="text" style={{width:"100%"}}/>
-            </td>
-            <td>
-              <input type="text" className="size" style={{width:"100%"}}/>
-            </td>
-            <td>
-              <input type="text" style={{width:"100%"}}/>
-            </td>
-          </tr>
-          <tr>
-            <td><input type="text" style={{width:"100%"}}/></td>
-            <td>
-              <input type="text" style={{width:"100%"}}/>
-            </td>
-            <td>
-              <input type="text" className="size" style={{width:"100%"}}/>
-            </td>
-            <td>
-              <input type="text"style={{width:"100%"}} />
-            </td>
-          </tr>
-          <tr>
-            <td><input type="text" style={{width:"100%"}}/></td>
-            <td>
-              <input type="text" style={{width:"100%"}}/>
-            </td>
-            <td>
-              <input type="text" className="size" style={{width:"100%"}}/>
-            </td>
-            <td>
-              <input type="text" style={{width:"100%"}}/>
-            </td>
-          </tr>
-          <tr>
-            <td><input type="text" style={{width:"100%"}}/></td>
-            <td>
-              <input type="text" style={{width:"100%"}}/>
-            </td>
-            <td>
-              <input type="text" className="size"style={{width:"100%"}} />
-            </td>
-            <td>
-              <input type="text"style={{width:"100%"}} />
-            </td>
-          </tr>
-          <tr>
-            <td><input type="text" style={{width:"100%"}}/></td>
-            <td>
-              <input type="text" />
-            </td>
-            <td>
-              <input type="text" className="size" style={{width:"100%"}}/>
-            </td>
-            <td>
-              <input type="text" />
-            </td>
-          </tr>
+          <TextField rows={this.state.n2} cols={4}/>
           <tr>
             <td><input type="text" style={{width:"100%"}}/></td>
             <td>
@@ -167,6 +121,7 @@ class Form extends React.Component {
             </td>
           </tr>
         </table>
+        <button className="btn btn-secondary mt-2 mx-1" name="table2" onClick={this.addRows}>Add more rows</button>
         </div>
         <div className="para container-fluid">
           <h3 style={{ marginLeft: "12%"}}>In case of expenditure below ₹25,000:</h3>
@@ -189,18 +144,9 @@ class Form extends React.Component {
             </td>
             <td>(Approved by) Faculty Counsellor</td>
           </tr>
-          <tr>
-            <td>
-              <input type="text" className="t3_input" style={{width:"100%"}}/>
-            </td>
-            <td>
-              <input type="text" className="t3_input" style={{width:"100%"}}/>
-            </td>
-            <td>
-              <input type="text" style={{width:"100%"}} />
-            </td>
-          </tr>
+          <TextField rows={this.state.n3} cols={3}/>
         </table>
+        <button className="btn btn-secondary mt-2 mx-1" name="table3" onClick={this.addRows}>Add more rows</button>
         </div>
         <div id="headline2_div">
         <h4 id="headline2">To be filled by Finance Convener / FC Member</h4>
@@ -213,21 +159,9 @@ class Form extends React.Component {
             <td>Remarks (if any):</td>
             <td>Verified for <span className="ruppee">₹:</span></td>
           </tr>
-          <tr>
-            <td>
-              <input type="text" style={{width:"100%"}}/>
-            </td>
-            <td>
-              <input type="text" />
-            </td>
-            <td>
-              <input type="text" />
-            </td>
-            <td>
-              <input type="text" />
-            </td>
-          </tr>
+          <TextField rows={this.state.n4} cols={3}/>
         </table>
+        <button className="btn btn-secondary mt-2 mx-1" name="table4" onClick={this.addRows}>Add more rows</button>
         </div>
         <div  className="table-responsive">
         <table className="table5">
@@ -235,17 +169,11 @@ class Form extends React.Component {
             <td>Gymkhana Office</td>
             <td>Finance Convener</td>
           </tr>
-          <tr>
-            <td>
-              <input type="text" />
-            </td>
-            <td>
-              <input type="text" />
-            </td>
-          </tr>
+          <TextField rows={this.state.n5} cols={2}/>
         </table>
+        <button className="btn btn-secondary mt-2 mx-1" name="table5" onClick={this.addRows}>Add more rows</button>
         </div>
-        <button type="button" class="btn btn-secondary" id="submit" onClick={this.props.handlePrint}>Save as Pdf</button>
+        <button type="button" className="btn btn-secondary" id="submit" onClick={this.props.handlePrint}>Save as Pdf</button>
       </form>
       </div>
     </div>
