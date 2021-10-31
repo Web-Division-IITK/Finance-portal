@@ -27,11 +27,11 @@ class Form extends React.Component {
     
   }
   render(){
-    
-   
+
     return (
-      <div className="p-3 mb-2 bg-light text-dark container-fluid white">
-      <div className="top">
+    
+      <div className=" text-dark white">
+      <div className="top flex">
         <img src={iitklogo} className="iitklogo  img-responsive " alt="iitklogo" />
         <div className="heading">
           <h1 className>Bill Clearance FORM – SG2 </h1>
@@ -40,15 +40,15 @@ class Form extends React.Component {
         </div>
         <div>
         <img src={gymkhana} style={{width:"300px"}}className="gymkhana  img-responsive img-fluid" alt="gymkhana" />
-        <div className="container-fluid" > 
+        <div className=" " > 
        <h5 className="img_tag"style={{fontWeight:".8",fontSize:".5rem",textAlign:"center"}}>Student's Gymkhana</h5>
       <h6 style={{textAlign:"center",fontWeight:"1",fontSize:".6rem"}}>IIT Kanpur</h6>
       </div>
       </div>
       </div>
-      <div className="container-fluid">
+      <div className=" ">
       <form className="white" >
-        <div className="checkbox container-fluid" >
+        <div className="checkbox  " >
           <label htmlFor="reimbursment"className="tick_text ">Reimbursement</label>
           <input type="checkbox" id="reimbursment" className="tick"/>
           <label htmlFor="vendor"className=" tick_text">Payment to vendor</label>
@@ -123,19 +123,23 @@ class Form extends React.Component {
         </table>
         <button className="btn btn-secondary mt-2 mx-1" name="table2" onClick={this.addRows}>Add more rows</button>
         </div>
-        <div className="para container-fluid">
-          <h3 style={{ marginLeft: "12%"}}>In case of expenditure below ₹25,000:</h3>
+        <div className="para">
+          <h3 >In case of expenditure below ₹25,000:</h3>
+          
           <p>
             “I am personally satisfied that these goods purchased are of the
             requisite quality and purchased from a reliable supplier at a
             reasonable price “
           </p>
-          <h3 style={{ marginLeft: "9.5%",fontWeight:"900"}}>In case of expenditure above ₹25,000 and below ₹2,50,000:</h3>
+        
+          <h3 >In case of expenditure above ₹25,000 and below ₹2,50,000:</h3>
+          <div className="test">
           <div id="headline">
              The LPC form has to be attached along with this form.
           </div>
+          </div>
         </div>
-        <div  className="table-responsive">
+        <div className="table-responsive">
         <table className="table3">
           <tr className="th-header">
             <td>Chairperson/President/Genera, UG,PG- Secretary</td>
@@ -159,7 +163,7 @@ class Form extends React.Component {
             <td>Remarks (if any):</td>
             <td>Verified for <span className="ruppee">₹:</span></td>
           </tr>
-          <TextField rows={this.state.n4} cols={3}/>
+          <TextField rows={this.state.n4} cols={4}/>
         </table>
         <button className="btn btn-secondary mt-2 mx-1" name="table4" onClick={this.addRows}>Add more rows</button>
         </div>
@@ -177,7 +181,6 @@ class Form extends React.Component {
       </form>
       </div>
     </div>
-   
   );
   }
    
